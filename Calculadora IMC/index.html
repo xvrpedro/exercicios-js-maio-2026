@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="top">
+            <img src="leben-logo.png" id="imgtop" alt="">
+        </div>
+    </header>
+    <section id="subtop">
+        <!-- subtopo = st -->
+        <div id="stcontainer">
+            <h1 id="sttitle">Calcule. Entenda. Cuide-se.</h1>
+            <h3 id="stsubtitle">Descubra o que o seu corpo está dizendo em segundos.</h3>
+            <div id="btnsub">
+                Calcular IMC
+                <a href="#secondcard" id="stbuttonseta">🡭</a>
+            </div>
+            <img src="medico.png" id="stimg" alt="">
+        </div>
+    </section>
+    <section id="stfaixa">
+            <div id="fcontainer">
+                <img src="leben-logo-branco.png" class="fimg" alt="">
+                <img src="leben-logo-branco.png" class="fimg" alt="">
+                <img src="leben-logo-branco.png" class="fimg" id="img3" alt="">
+                <img src="leben-logo-branco.png" class="fimg" id="img4" alt="">
+                <img src="leben-logo-branco.png" class="fimg" id="img5" alt="">
+                <img src="leben-logo-branco.png" class="fimg" id="img6" alt="">
+                <img src="leben-logo-branco.png" class="fimg" id="img7" alt="">
+                <img src="leben-logo-branco.png" class="fimg" id="img8" alt="">
+                <img src="leben-logo-branco.png" class="fimg" id="img9" alt="">
+                <img src="leben-logo-branco.png" class="fimg" id="img10" alt="">
+            </div>
+    </section>
+    <section>
+        <div id="firstcard">
+            <div>
+                <h3>Antes de calcular</h3>
+                <br>
+                <p><strong>Por que fazer seu IMC?</strong>
+                <br>Milhões de pessoas vivem sem saber que seu peso está fora do equilíbrio ideal — e isso aumenta o risco de diabetes, hipertensão e doenças cardíacas. Conhecer seu IMC é o primeiro passo para sair do escuro e tomar decisões reais sobre sua saúde. Não para se julgar, mas para se entender.
+                </p>
+                <br><br>
+                <p><strong>Como funciona o IMC?</strong>
+                <br>O cálculo é simples: seu peso em quilos dividido pela sua altura em metros ao quadrado. O resultado cai em uma faixa — abaixo do peso, peso normal, sobrepeso ou obesidade — e cada faixa traz orientações específicas sobre o que fazer a seguir. Em menos de 10 segundos você tem uma leitura real do seu corpo.
+                </p>
+                <br><br>
+                <p><strong>O que é o IMC?</strong>
+                <br>O Índice de Massa Corporal é uma ferramenta criada pela Organização Mundial da Saúde usada por médicos e profissionais de saúde no mundo inteiro. Ele não substitui uma consulta, mas é o ponto de partida mais acessível que existe para entender sua relação com o peso — sem equipamentos, sem custo, sem complicação.
+                </p>
+            </div>
+        </div>
+        <div id="secondcard">
+            <div>
+                <h3>Calculadora IMC</h3>
+                <br>
+                <p>Peso </p> <input type="number" name="txtw" class="txt" id="txtw">
+                <br><br>
+                <p>Altura </p> <input type="number" name="txth" class="txt" id="txth">
+                <br>
+                <input type="button" value="Calcular" id="btncalcular" onclick="calcular()">
+                <div id="res">
+                    Insira as informações acima.
+                </div>
+            </div>
+            <img src="imc1.png" id="imgimc" alt="">
+        </div>
+    </section>
+    <footer >
+        <p>&copy;<span id="ano"></span> Pedro Xavier</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
